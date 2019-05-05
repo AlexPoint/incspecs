@@ -54,7 +54,7 @@ exclude:
 # The language setting is used in /includes/header.html for html-settings
 # We support only English for now - the multi-language mechanism is in place for easier localization later
 languages: ["en"]
-exclude_from_localizations: ["CNAME"]
+exclude_from_localizations: ["CNAME", "assets"]
 defaultLang: en
 languageNames:
   fr: Français
