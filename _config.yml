@@ -1,14 +1,15 @@
-# Welcome to Jekyll!
-#
-# This config file is meant for settings that affect your whole blog, values
-# which you are expected to set up once and rarely edit after that. If you find
-# yourself editing this file very often, consider using Jekyll's data files
-# feature for the data you need to update frequently.
-#
-# For technical reasons, this file is *NOT* reloaded automatically when you use
-# 'bundle exec jekyll serve'. If you change this file, please restart the server process.
+# To deploy the site in production:
+# - build the site locally using the command: bundle exec jekyll serve -d ./docs
+# - push the files to the master branch on the remote repo
+# - you're done!
+
+
 
 # Site settings
+url: 'https://alexpoint.github.io/theuniversaldb'
+baseurl: ''
+
+
 # These are used to personalize your new site. If you look in the HTML files,
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
@@ -33,11 +34,33 @@ plugins:
 # Exclude from processing.
 # The following items will not be processed, by default. Create a custom list
 # to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
+exclude:
+    - .sass-cache
+    - Gemfile
+    - Gemfile.lock
+    - LICENSE
+    - README.md
+    - INSTALL.md
+    - docs
 #   - node_modules
 #   - vendor/bundle/
 #   - vendor/cache/
 #   - vendor/gems/
 #   - vendor/ruby/
+
+# We use a custom plugin for localization (with one version of the website in various languages).
+# On top of that, we use a modified version of the plugin so that the default version (English) is under the URL /en
+# See https://www.klaasnotfound.com/2017/02/16/proper-multilingual-site-with-github-pages-and-jekyll/ (point 1.)
+# The language setting is used in /includes/header.html for html-settings
+# We support only English for now - the multi-language mechanism is in place for easier localization later
+languages: ["en"]
+exclude_from_localizations: ["CNAME"]
+defaultLang: en
+languageNames:
+  fr: Français
+  en: English
+
+
+# Analytics
+# used in _includes/footer_scripts
+google_analytics_tracking_id: UA-132410910-1
