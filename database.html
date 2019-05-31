@@ -44,8 +44,8 @@
             <li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li>
             <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
             <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
-            <li class="nav-item"><a href="database.html" class="nav-link">Database</a></li>
-            <li class="nav-item active"><a href="contact.html" class="nav-link">Contact</a></li>
+            <li class="nav-item active"><a href="database.html" class="nav-link">Database</a></li>
+            <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li>
           </ul>
         </div>
       </div>
@@ -58,8 +58,8 @@
         <div class="container">
           <div class="row slider-text align-items-center">
             <div class="col-md-7 col-sm-12 ftco-animate">
-              <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Contact</span></p>
-              <h1 class="mb-3">Contact</h1>
+              <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Contact</span></p> -->
+              <h1 class="mb-3">Database</h1>
             </div>
           </div>
         </div>
@@ -71,13 +71,31 @@
       <div class="container bg-light">
         <div class="row d-flex mb-5 contact-info">
           <div class="col-md-12 mb-4">
-            <h2 class="h4">Contact Information</h2>
+            <h2 class="h4">Database description</h2>
           </div>
           <div class="w-100"></div>
-          <div class="col-md-9">
-            <p>For any question or request, contact us directly by sending an email to <a href="mailto:contact@tudb.com">contact@tudb.com</a>.
+          <div class="col-md-12">
+            <p>The database contains <b>2000</b> rows, each row having information about one global company.
             </p>
-            <p>We reply every email that comes our way!</p>
+            <p>The information available for each company as well as the completion rate - i.e. the number of companies for which we have this information - is detailed in the table below.</p>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Column</th>
+                  <th>Completion rate</th>
+                  <th>Description</th>
+                </tr>
+              </thead>
+              <tbody>
+                {% for entry in site.data.company_dictionary %}
+                <tr>
+                  <td>{{ entry.column }}</td>
+                  <td>{{ entry.completion_rate }}</td>
+                  <td>{{ entry.description }}</td>
+                </tr>
+                {% endfor %}
+              </tbody>
+            </table>
           </div>
           <!-- <div class="col-md-3">
             <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
