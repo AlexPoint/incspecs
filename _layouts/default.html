@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+	  {% include head.html %}
+  </head>
+  <body>
+      <!-- navbar is the only difference between the home page and a regular page -->
+      {% include navbar.html %}
+
+      {{ content }}
+
+      {% include footer.html %}
+
+  </body>
+
+    {% include scripts.html %}
+</html>
