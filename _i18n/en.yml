@@ -1,0 +1,48 @@
+index:
+  tagline: A structured and updated <strong>database</strong> of the biggest companies worldwide
+  title: The largest companies worldwide
+  counter:
+    companies: Companies
+    revenues: in revenues
+    profits: in profits
+    employees: employees
+  pitch:
+    subtitle: Your database of companies
+    complete: Complete
+    complete_explanation: We collect and reconcile information from multiple sources to give you the most complete snapshot of the biggest companies.
+    up_to_date: Up-to-date
+    up_to_date_explanation: Our database is updated on a monthly basis to provide you with the most up-to-date information.
+    augmented: Augmented
+    augmented_explanation: We convert the financial results to US dollars so that you can compare effortlessly companies from around the world.
+    intelligent: Intelligent
+    intelligent_explanation: We extract information also from unstructured sources as well such as annual reports and quarterly statements to provide in-depth insights.
+  custom:
+    subtitle: Custom research or development
+    description: If the database is missing the information you are looking for, we can go looking for it. Also, if you are missing a feature, we can develop it.
+    ask_for_it: Just ask for it
+  pricing:
+    title: Pricing
+    beta: Beta
+    explanation: We are currently in beta, so that means everything is free for our beloved first users - yes, we are talking about you.
+    free: Free
+    get_started: Get started
+
+database:
+  title: Database
+  description: 
+    title: Description
+    paragraph1: The database contains <b>2000</b> rows, each row having information about one global company.
+    paragraph2: The information available for each company as well as the completion rate - i.e. the number of companies for which we have this information - is detailed in the table below.
+    column: Column
+    completion_rate: Completion rate
+    description: Description
+  download:
+    title: You need the database?
+    instructions: The whole database is available as a CSV file, compressed. Click the button below to download it.
+    button: Download
+
+footer:
+  title: TheUniversalCompanyDb
+  tagline: The complete and updated database of the biggest companies worldwide.
+  contact: Contact
+  all_rights_reserved: All rights reserved

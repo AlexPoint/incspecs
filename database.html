@@ -9,7 +9,7 @@ layout: default
       <div class="row slider-text align-items-center">
         <div class="col-md-7 col-sm-12 ftco-animate">
           <!-- <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Contact</span></p> -->
-          <h1 class="mb-3">Database</h1>
+          <h1 class="mb-3">{% t database.title %}</h1>
         </div>
       </div>
     </div>
@@ -21,19 +21,18 @@ layout: default
   <div class="container bg-light">
     <div class="row d-flex mb-5 contact-info">
       <div class="col-md-12 mb-4">
-        <h2 class="h4">Database description</h2>
+        <h2 class="h4">{% t database.description.title %}</h2>
       </div>
       <div class="w-100"></div>
       <div class="col-md-12">
-        <p>The database contains <b>2000</b> rows, each row having information about one global company.
-        </p>
-        <p>The information available for each company as well as the completion rate - i.e. the number of companies for which we have this information - is detailed in the table below.</p>
+        <p>{% t database.description.paragraph1 %}</p>
+        <p>{% t database.description.paragraph2 %}</p>
         <table class="table">
           <thead>
             <tr>
-              <th>Column</th>
-              <th>Completion rate</th>
-              <th>Description</th>
+              <th>{% t database.description.column %}</th>
+              <th>{% t database.description.completion_rate %}</th>
+              <th>{% t database.description.description %}</th>
             </tr>
           </thead>
           <tbody>
@@ -92,9 +91,9 @@ layout: default
   <div class="container">
     <div class="row text-center justify-content-center">
       <div class="col-md-8 ftco-animate">
-        <h2 class="heading">So you need the database?</h2>
-        <p class="sub-heading mb-5">Click the button below to download the csv file, compressed.</p>
-        <p><a href="#" id="download-link" class="btn btn-primary btn-lg">Download</a></p>
+        <h2 class="heading">{% t database.download.title %}</h2>
+        <p class="sub-heading mb-5">{% t database.download.instructions %}</p>
+        <p><a href="#" id="download-link" class="btn btn-primary btn-lg">{% t database.download.button %}</a></p>
       </div>
     </div>
   </div>
