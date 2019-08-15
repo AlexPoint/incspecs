@@ -32,8 +32,8 @@ navbar:
   home: Home
   download: Download
 
-database:
-  title: Database
+download:
+  title: Download
   description: 
     title: Description
     paragraph1: The database contains <b>2000</b> rows, each row having information about one global company.
@@ -41,7 +41,7 @@ database:
     column: Column
     completion_rate: Completion rate
     description: Description
-  download:
+  action:
     title: You need the database?
     instructions: The whole database is available as a CSV file, compressed. Click the button below to download it.
     button: Download
