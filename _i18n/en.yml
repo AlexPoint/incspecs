@@ -27,6 +27,11 @@ index:
     free: Free
     get_started: Get started
 
+navbar:
+  menu: Menu
+  home: Home
+  download: Download
+
 database:
   title: Database
   description: 
@@ -42,7 +47,11 @@ database:
     button: Download
 
 footer:
-  title: TheUniversalCompanyDb
-  tagline: The complete and updated database of the biggest companies worldwide.
   contact: Contact
   all_rights_reserved: All rights reserved
+
+global:
+  name: Inc. specs
+  tagline: The structured database of the biggest companies worldwide
+  title: Inc. specs - The structured database of the biggest companies worldwide
+  description: A structured database of the main information of the biggest multinational companies
