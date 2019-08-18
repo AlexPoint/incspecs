@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-    
+{% assign db_nb_rows = site.data.company_dictionary | size %}
 <section class="home-slider owl-carousel">
   <div class="slider-item" style="background-image: url('{{ baseurl_root }}/assets/images/bg_3.jpg');" data-stellar-background-ratio="0.5">
     <div class="overlay"></div>
@@ -25,7 +25,10 @@ layout: default
       </div>
       <div class="w-100"></div>
       <div class="col-md-12">
-        <p>{% t download.description.paragraph1 %}</p>
+        {% capture t1 %}
+          {% t download.description.paragraph1 %}
+        {% endcapture %}
+        <p>{{ t1 | replace: "$1", db_nb_rows}}</p>
         <p>{% t download.description.paragraph2 %}</p>
         <table class="table">
           <thead>
@@ -93,7 +96,7 @@ layout: default
       <div class="col-md-8 ftco-animate">
         <h2 class="heading">{% t download.action.title %}</h2>
         <p class="sub-heading mb-5">{% t download.action.instructions %}</p>
-        <p><a href="#" id="download-link" class="btn btn-primary btn-lg">{% t download.action.button %}</a></p>
+        <p><a href="/assets/dl/company_dictionary.tsv" download="incspecs-company-db.tsv" id="download-link" class="btn btn-primary btn-lg">{% t download.action.button %}</a></p>
       </div>
     </div>
   </div>
