@@ -57,7 +57,6 @@ languages: ["en"]
 exclude_from_localizations: ["CNAME", "assets"]
 defaultLang: en
 languageNames:
-  fr: Français
   en: English
 
 
