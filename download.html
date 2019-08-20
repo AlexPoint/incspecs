@@ -55,7 +55,10 @@ layout: default
       <div class="col-md-8 ftco-animate">
         <h2 class="heading">{% t download.feedback.title %}</h2>
         <p class="sub-heading mb-5">{% t download.feedback.paragraph1 %}</p>
-        <p class="sub-heading mb-5">{% t download.feedback.paragraph2 %}</p>
+        {% capture p2 %}
+          {% t download.feedback.paragraph2 %}
+        {% endcapture %}
+        <p class="sub-heading mb-5">{{ p2 | replace: "$1", site.contact_email }}</p>
       </div>
     </div>
   </div>

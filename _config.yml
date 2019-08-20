@@ -8,6 +8,7 @@
 # Site settings
 url: 'https://alexpoint.github.io/theuniversaldb'
 baseurl: ''
+contact_email: contact@incspecs.com
 
 
 # These are used to personalize your new site. If you look in the HTML files,
