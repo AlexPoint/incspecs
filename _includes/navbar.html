@@ -12,12 +12,13 @@
         <li class="nav-item"><a href="project.html" class="nav-link">Projects</a></li>
         <li class="nav-item"><a href="pricing.html" class="nav-link">Pricing</a></li>
         <li class="nav-item"><a href="blog.html" class="nav-link">Blog</a></li> -->
+        <li class="nav-item"><a href="database.html" class="nav-link">{% t navbar.database %}</a></li>
         <li class="nav-item"><a href="download.html" class="nav-link">{% t navbar.download %}</a></li>
         <!-- <li class="nav-item"><a href="contact.html" class="nav-link">Contact</a></li> -->
         
         <!-- Language picker (commented because not styled yet - see alfonse website styles for quick styling ) -->
         <!-- <li class="nav-item has-dropdown">
-          <a class="nav-link" href="#">{{ site.languageNames[site.lang] }} </a>
+          <a class="nav-link" href="#">{{ site.languageNames[site.lang] }} ▼</a>
           <ul class="dropdown">
           {% for lang in site.languageNames %}
             {% if lang[0] == site.lang %} {% continue %} {% endif %}

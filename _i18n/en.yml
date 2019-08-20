@@ -30,17 +30,26 @@ index:
 navbar:
   menu: Menu
   home: Home
+  database: Database
   download: Download
 
-download:
-  title: Download
+database:
+  title: Database
   description: 
     title: Description of the database
-    paragraph1: The database contains <b>$1</b> rows, each row having information about one global company.
-    paragraph2: The information available for each company as well as the completion rate - i.e. the number of companies for which we have this information - is detailed in the table below.
+    paragraph1: The database consists of one unique table (denormalized), with one row representing one company.
+    paragraph2: The current version contains <b>$1</b> rows with the information described in the table below.
+    paragraph3: The completion rate indicates the number of companies for a given informationif available.
     column: Column
     completion_rate: Completion rate
     description: Description
+  download:
+    title: Looks like what you are looking for?
+    subtitle: You can download the complete database on the download page for free.
+    action: Go to the download page
+
+download:
+  title: Download
   action:
     title: You need the database?
     instructions: The whole database is available as a TSV file - i.e. a CSV file delimited by tab characters. Click the button below to download it.
