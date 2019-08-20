@@ -50,9 +50,23 @@ database:
 
 download:
   title: Download
-  action:
-    title: You need the database?
-    instructions: The whole database is available as a TSV file - i.e. a CSV file delimited by tab characters. Click the button below to download it.
+  form:
+    paragraph1: The full database is available for download free of charge. It is available as one compressed TSV file - i.e. a CSV file with tab separators.
+    paragraph2: "Just fill this form to access the download button:"
+    name: Your Name
+    email: Your Email
+    usage: Usage
+    public: Public
+    private: Private
+    explanation: Tell us a bit more about what you plan to do with this database
+    submit: Submit
+  feedback:
+    title: Please give us your feedback
+    paragraph1: "Any feedback is welcomed and will help us improve the database: a question, missing information, incorrect data, an idea about another data source that we could consolidate, a random thought..."
+    paragraph2: "Once you have used the database, we would greatly appreciate if you send us an email at <a href='mailto:contact@incspecs.com' target='_blank'>contact@incspecs.com</a>. We commit to replying every email that comes our way!"
+  modal:
+    title: Thank you!
+    body: "To download the database, click the button below:"
     button: Download
 
 footer:
