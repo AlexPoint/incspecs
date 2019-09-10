@@ -1,0 +1,20 @@
+column	description
+wiki_name	The name of the company as per the Wikipedia article
+name	The official name of the company
+isin	The International Securities Identification Number (ISIN), that is a code that uniquely identifies a specific securities issue.
+revenue_amount	The company's revenues.
+revenue_currency	The currency in which the revenues amount is expressed. 
+revenue_year	The last year at which the revenues were known.
+revenue_src_url	The URL of the page from which the revenue was extracted.
+num_employees	The company's number of employees.
+num_employees_year	The last year at which the number of employees was known.
+net_income_amount	The company's net income.
+net_income_currency	The currency in which the net_income_amount is expressed. 
+net_income_year	The last year at which the net income was known.
+net_income_src_url	The URL of the page from which the revenue was extracted, if different from revenue_src_url.
+operating_income_amount	The company's operating income.
+operating_income_currency	The currency in which the operating_income_amount is expressed.
+operating_income_year	The last year at which the operating income was known.
+operating_income_src_url	The URL of the page from which the revenue was extracted, if different from revenue_src_url.
+industry	The type of industry the company is operating in.
+hq_country	The country in which the company's headquarters are located.
