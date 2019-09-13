@@ -51,8 +51,8 @@ database:
 download:
   title: Download
   form:
-    paragraph1: The full database is available for download free of charge. It is available as one compressed TSV file - i.e. a CSV file with tab separators.
-    paragraph2: "Just fill this form to access the download button:"
+    paragraph1: "The full database is available for download free of charge. It is one compressed TSV file - i.e. a CSV file with tab separators, and you can find more details about the columns on the database page."
+    paragraph2: "Please fill this form to tell us who you are and why you need and click the download button below."
     name: Your Name
     email: Your Email
     usage: Usage

@@ -20,14 +20,16 @@ layout: default
       <div class="col-md-6">
         <p>{% t download.form.paragraph1 %}</p>
         <p>{% t download.form.paragraph2 %}</p>
+        <p><a href="/assets/dl/company_db.rar" download="incspecs-company-db.rar" id="download-link" class="btn btn-primary btn-lg">{% t download.modal.button %}</a></p>
       </div>
       <div class="col-md-6 pr-md-5">
-        <form id="download-form" action="#">
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScvINLdMlHU4ptvqtGVnb5OE04rJOiBUt-h9p0Ko9rkQssrFA/viewform?embedded=true" width="510" height="925" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+        <!-- <form id="download-form" action="#">
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="{% t download.form.name %}">
+            <input type="text" class="form-control" name="name" placeholder="{% t download.form.name %}">
           </div>
           <div class="form-group">
-            <input type="text" class="form-control" placeholder="{% t download.form.email %}">
+            <input type="text" class="form-control" name="email" placeholder="{% t download.form.email %}">
           </div>
           <div class="form-group">
             <label for="usage-dropdown">{% t download.form.usage %}</label>
@@ -37,13 +39,13 @@ layout: default
             </select>
           </div>
           <div class="form-group">
-            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="{% t download.form.explanation %}"></textarea>
+            <textarea name="explanation" id="" cols="30" rows="7" class="form-control" placeholder="{% t download.form.explanation %}"></textarea>
           </div>
+          <input type="hidden" name="pageurl" id="pageurl" />
           <div class="form-group">
             <a href="#" data-toggle="modal" data-target="#modal-download" class="btn btn-primary btn-lg py-3 px-5">{% t download.form.submit %}</a>
-            <!-- <input type="submit" value="Submit" data-toggle="modal" data-target="#modal-download" class="btn btn-primary btn-lg py-3 px-5"> -->
           </div>
-        </form>
+        </form> -->
       </div>
   </div>
 </section>
