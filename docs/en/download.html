@@ -41,7 +41,7 @@
 
 
 
-<link rel="canonical" href="http://localhost:4000/en/contact.html">
+<link rel="canonical" href="http://localhost:4000/en/download.html">
   </head>
   <body>
       <!-- navbar is the only difference between the home page and a regular page -->
@@ -84,67 +84,90 @@
     <div class="container">
       <div class="row slider-text align-items-center">
         <div class="col-md-7 col-sm-12 ftco-animate">
-          <p class="breadcrumbs"><span class="mr-2"><a href="index.html">Home</a></span> <span>Contact</span></p>
-          <h1 class="mb-3">Contact</h1>
+          <h1 class="mb-3">Download</h1>
         </div>
       </div>
     </div>
   </div>
 </section>
-<!-- END slider -->
 
 <section class="ftco-section contact-section">
   <div class="container bg-light">
     <div class="row d-flex mb-5 contact-info">
-      <div class="col-md-12 mb-4">
-        <h2 class="h4">Contact Information</h2>
+      <div class="col-md-6">
+        <p>The full database is available for download free of charge. It is one compressed TSV file - i.e. a CSV file with tab separators, and you can find more details about the columns on the database page.</p>
+        <p>Please fill this form to tell us who you are and why you need and click the download button below.</p>
+        <p><a href="/assets/dl/company_db.rar" download="incspecs-company-db.rar" id="download-link" class="btn btn-primary btn-lg">Download</a></p>
       </div>
-      <div class="w-100"></div>
-      <div class="col-md-9">
-        <p>For any question or request, contact us directly by sending an email to <a href="mailto:contact@tudb.com">contact@tudb.com</a>.
-        </p>
-        <p>We reply every email that comes our way!</p>
-      </div>
-      <!-- <div class="col-md-3">
-        <p><span>Address:</span> 198 West 21th Street, Suite 721 New York NY 10016</p>
-      </div>
-      <div class="col-md-3">
-        <p><span>Phone:</span> <a href="tel://1234567920">+ 1235 2355 98</a></p>
-      </div>
-      <div class="col-md-3">
-        <p><span>Email:</span> <a href="mailto:info@yoursite.com">info@yoursite.com</a></p>
-      </div>
-      <div class="col-md-3">
-        <p><span>Website</span> <a href="#">yoursite.com</a></p>
-      </div> -->
-    </div>
-    <!-- <div class="row block-9">
       <div class="col-md-6 pr-md-5">
-        <form action="#">
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Your Name">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Your Email">
-          </div>
-          <div class="form-group">
-            <input type="text" class="form-control" placeholder="Subject">
-          </div>
-          <div class="form-group">
-            <textarea name="" id="" cols="30" rows="7" class="form-control" placeholder="Message"></textarea>
-          </div>
-          <div class="form-group">
-            <input type="submit" value="Send Message" class="btn btn-primary py-3 px-5">
-          </div>
-        </form>
-      
-      </div>
+        <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScvINLdMlHU4ptvqtGVnb5OE04rJOiBUt-h9p0Ko9rkQssrFA/viewform?embedded=true" width="510" height="925" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
 
-      <div class="col-md-6" id="map"></div> -->
+        <!-- The HTML form below is commented as we collect information directly in a Google Form.
+        It allows the storage of those information in a Google Spreadsheet, which is not possible easily
+        (need to go through OAuth authentication) hen done directly in javascript. -->
+        <!-- <form id="download-form" action="#">
+          <div class="form-group">
+            <input type="text" class="form-control" name="name" placeholder="Your Name">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" name="email" placeholder="Your Email">
+          </div>
+          <div class="form-group">
+            <label for="usage-dropdown">Usage</label>
+            <select id="usage-dropdown" name="usage" class="form-control">
+              <option value="Public">Public</option>
+              <option value="Private">Private</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <textarea name="explanation" id="" cols="30" rows="7" class="form-control" placeholder="Tell us a bit more about what you plan to do with this database"></textarea>
+          </div>
+          <input type="hidden" name="pageurl" id="pageurl" />
+          <div class="form-group">
+            <a href="#" data-toggle="modal" data-target="#modal-download" class="btn btn-primary btn-lg py-3 px-5">Submit</a>
+          </div>
+        </form> -->
+      </div>
+  </div>
+</section>
+
+<section class="ftco-section cover_1" style="background-image: url(/assets/images/bg_3.jpg);" data-stellar-background-ratio="0.5">
+  <div class="overlay"></div>
+  <div class="container">
+    <div class="row text-center justify-content-center">
+      <div class="col-md-8 ftco-animate">
+        <h2 class="heading">Please give us your feedback</h2>
+        <p class="sub-heading mb-5">Any feedback is welcomed and will help us improve the database: a question, missing information, incorrect data, an idea about another data source that we could consolidate, a random thought...</p>
+        
+        <p class="sub-heading mb-5">
+          Once you have used the database, we would greatly appreciate if you send us an email at <a href='mailto:contact@incspecs.com' target='_blank'>contact@incspecs.com</a>. We commit to replying every email that comes our way!
+        </p>
+      </div>
     </div>
   </div>
 </section>
 
+
+<!-- This modal is not used as we use Google Form to collect information, which does not provide any js callback. -->
+<!-- <div class="modal fade" id="modal-download" tabindex="-1" role="dialog" aria-labelledby="modalAppointmentLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="modalAppointmentLabel">Thank you!</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="form-group">To download the database, click the button below:</div>
+        <div class="form-group">
+          <a href="/assets/dl/company_db.rar" download="incspecs-company-db.rar" id="download-link" class="btn btn-primary btn-lg">Download</a>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div> -->
 
       <footer class="ftco-footer ftco-bg-dark ftco-section">
   <div class="container">
