@@ -380,7 +380,11 @@ $(document).ready(function($) {
 
 	// Send event to GA for every download
 	$("#download-link").click(function(){
-
+		gtag('event', 'download', {
+		  'event_category': 'company database'
+		  // 'event_label': '',
+		  // 'value': <value>
+		});
 	})
 
 });
