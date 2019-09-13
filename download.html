@@ -24,6 +24,10 @@ layout: default
       </div>
       <div class="col-md-6 pr-md-5">
         <iframe src="https://docs.google.com/forms/d/e/1FAIpQLScvINLdMlHU4ptvqtGVnb5OE04rJOiBUt-h9p0Ko9rkQssrFA/viewform?embedded=true" width="510" height="925" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+
+        <!-- The HTML form below is commented as we collect information directly in a Google Form.
+        It allows the storage of those information in a Google Spreadsheet, which is not possible easily
+        (need to go through OAuth authentication) hen done directly in javascript. -->
         <!-- <form id="download-form" action="#">
           <div class="form-group">
             <input type="text" class="form-control" name="name" placeholder="{% t download.form.name %}">
@@ -67,7 +71,8 @@ layout: default
 </section>
 
 
-<div class="modal fade" id="modal-download" tabindex="-1" role="dialog" aria-labelledby="modalAppointmentLabel" aria-hidden="true">
+<!-- This modal is not used as we use Google Form to collect information, which does not provide any js callback. -->
+<!-- <div class="modal fade" id="modal-download" tabindex="-1" role="dialog" aria-labelledby="modalAppointmentLabel" aria-hidden="true">
   <div class="modal-dialog" role="document">
     <div class="modal-content">
       <div class="modal-header">
@@ -85,4 +90,4 @@ layout: default
       
     </div>
   </div>
-</div>
+</div> -->
