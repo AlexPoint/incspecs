@@ -29,18 +29,26 @@ layout: default
 </section>
 <!-- END slider -->
 
+{% assign db_nb_companies = site.data.company_db | size %}
+
+{% assign nb_employees = 0 %}
+{% for row in site.data.company_db %}
+    {% assign nb_employees = nb_employees | plus: row.num_employees %}
+{% endfor %}
+
 <section class="ftco-counter" id="section-counter">
   <div class="container bg-light">
     <div class="row">
-      <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+      <div class="col-md-6 col-lg-6 d-flex justify-content-center counter-wrap ftco-animate">
         <div class="block-18 text-center">
           <div class="text">
-            <strong class="number" data-number="2000">0</strong>
+            <strong class="number" data-number="{{ db_nb_companies }}">0</strong>
             <span>{% t index.counter.companies %}</span>
           </div>
         </div>
       </div>
-      <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+      <!-- Revenues and profits need to be cleaned and converted to USD before aggregation. -->
+      <!-- <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
         <div class="block-18 text-center">
           <div class="text">
             <strong class="number">$</strong><strong class="number" data-number="12000">0</strong><strong class="number">m</strong>
@@ -55,11 +63,11 @@ layout: default
             <span>{% t index.counter.profits %}</span>
           </div>
         </div>
-      </div>
-      <div class="col-md-6 col-lg-3 d-flex justify-content-center counter-wrap ftco-animate">
+      </div> -->
+      <div class="col-md-6 col-lg-6 d-flex justify-content-center counter-wrap ftco-animate">
         <div class="block-18 text-center">
           <div class="text">
-            <strong class="number" data-number="12921">5143</strong><strong class="number">m</strong>
+            <strong class="number" data-number="{{ nb_employees }}">0</strong><strong class="number">m</strong>
             <span>{% t index.counter.employees %}</span>
           </div>
         </div>
