@@ -41,7 +41,7 @@ database:
     paragraph2: The current version contains <b>$1</b> rows with the information described in the table below.
     paragraph3: The completion rate indicates the number of companies for a given informationif available.
     column: Column
-    completion_rate: Completion rate
+    completion_rate: Completion rate (%)
     description: Description
   download:
     title: Looks like what you are looking for?
